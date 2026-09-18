@@ -29,8 +29,8 @@ def insert_patient_data(patient: Patient):
 patient_info = {"name": "Abdullah", "age": 30}
 
 # create the object and unpack the dictionary
-patient1 = Patient(**patient_info)
+patient2 = Patient(**patient_info)
 
 # call the function
-insert_patient_data(patient1)
+insert_patient_data(patient2)
 
