@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV 'C:\Users\CEO Sab\Downloads\Pydantic_Practice\myenv'
+set -gx VIRTUAL_ENV 'C:\Users\Mind WP 4\Documents\FastAPI Projects\Pydantic_practice\myenv'
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"Scripts $PATH
