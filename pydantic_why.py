@@ -1,3 +1,5 @@
+from pydantic_model import Patient
+
 # Usually python allows dynamic typing not static typing like Java or C++.
 # Python type hunting is a way to add type hints to your code not producing errors. 
 # Pythont does not have Type Validation by default.
@@ -16,4 +18,19 @@
 
 
 # insert_patient_data("Abdullah", 30)    
+
+def insert_patient_data(patient: Patient):
+
+    print(patient.name)
+    print(patient.age)
+    print("inserted")
+
+
+patient_info = {"name": "Abdullah", "age": 30}
+
+# create the object and unpack the dictionary
+patient1 = Patient(**patient_info)
+
+# call the function
+insert_patient_data(patient1)
 
